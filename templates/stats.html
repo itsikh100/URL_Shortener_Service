@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shorter URL Website - Itsik Harari</title>
+  <link rel="stylesheet" type="text/css" href="static/mystyle.css">
+  <script src="static/shorter.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <h1>Statistics:</h1>
+  <section id="urlbox" style="text-align:left;">
+    <h2 style="text-align:center;">Show Statatistics:</h2>
+    <div class="registered-counter">
+      <label for="counter">URLs that registered in the database: </label>
+      <label>{{ sizeOfUrl }}</label>
+      <br><br>
+    </div>
+    <div class="registered-counter-bytime">
+      <label for="mySelect">Number of URL were performed in the last</label>
+      <select id="selection" onchange="selectionChanged()">
+        <option value="Minute">Minute</option>
+        <option value="Hour">Hour</option>
+        <option value="Day">Day</option>
+      </select>
+      <labal> : </labal>
+      <labal id="labelToShow">{{ }}</labal>
+    </div>
+  </section>
+</body>
+
+</html>

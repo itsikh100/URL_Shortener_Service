@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shorter URL Website - Itsik Harari</title>
+  <link rel="stylesheet" type="text/css" href="static/mystyle.css">
+  <script src="static/shorter.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <h1>Your shortened URL</h1>
+  <section id="urlbox">
+    <h2>You can copy and share the shortened URL</h2>
+    <form onsubmit="copyToClipboard()" action="">
+      <div id="formurl">
+        <input type="text" value="url test copy" id="URLtxt">
+        <script>
+          var url = '{{ shortUrl }}';
+          document.getElementById("URLtxt").value = "localhost:5000/" + url;
+        </script>
+        <div id="formbutton">
+          <input type="submit" value="Copy URL">
+        </div>
+      </div>
+    </form>
+    <p class="boxtextcenter">Name: Itsik Harari.<br>ID: 201016151.<br>Email: Itsikh100@Gmail.com</p>
+  </section>
+</body>
+
+</html>

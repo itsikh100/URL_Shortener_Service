@@ -1,0 +1,38 @@
+TASK:
+
+In this Project i implemented a URL shortener service. This service enables registering a
+“long URL”. e.g. www.somethingverylong.com/1234.html and receiving a “short URL” that will
+redirect to it. e.g. localhost/sh54.
+
+This service is similar to the service offered by https://tinyurl.com/.
+
+
+Front-end:
+The front-end is a web page displaying a simple web form:
+
+After entering a “long URL” and pressing the “Create short URL” button, the web page will
+present the generated “short URL”.
+
+The front-end  implemented using HTML, CSS and JavaScript.
+
+Backend:
+
+The backend is a webserver. For this coding task, the backend should run on the localhost.
+
+a. When browsing to http://localhost/, the backend will service the front-end’s main page, 
+     containing the web form asking to "Enter a long URL" (see above front-end mockup).
+
+b. When pressing "Create short URL", the front-end will contact the backend and send the form arguments. 
+    The backend will generate a "short URL", store it in a database and return the "short URL" to the front-end 
+    to be displayed to the user (see above front-end mockup).
+
+c. When accessing a "short URL", for example: http://localhost/sh54, it will be redirected to the appropriate "long URL",
+    for example: www.somethingverylong.com/1234.html.
+
+The backend implemented using:
+
+- Python3- the programming language.
+
+- Flask - Web Framework.
+
+- SQLite - Database; note that SQLite is natively supported in python.

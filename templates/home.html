@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shorter URL Website - Itsik Harari</title>
+  <link rel="stylesheet" type="text/css" href="static/mystyle.css">
+  <script src="static/shorter.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <h1>Welcome to shortner URL</h1>
+  <section id="urlbox">
+    <h1>Paste the URL to be shortened</h1>
+    <form method="POST" onsubmit="confirminput()" action="">
+      {{ form.hidden_tag() }}
+      <div id="formurl">
+        <!--<input type="url" id="URLtxt" name:"URLtxt" placeholder="Enter the link here"> -->
+        {{ form.urlFromUser(class="URLtxt") }}
+        <!--<div id="formbutton">
+          <input type="submit" value="Create short URL">
+        </div>-->
+        <div class="formbutten">
+          {{ form.submit(class="formbutten")}}
+        </div>
+      </div>
+    </form>
+    <p class="boxtextcenter">Name: Itsik Harari.<br>ID: 201016151.<br>Email: Itsikh100@gmail.com</p>
+  </section>
+</body>
+
+</html>
